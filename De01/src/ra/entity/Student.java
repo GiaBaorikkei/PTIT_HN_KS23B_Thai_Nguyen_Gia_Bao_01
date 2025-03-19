@@ -91,13 +91,8 @@ public class Student implements IApp {
     @Override
     public void inputData(Scanner sc) {
         System.out.print("Nhập mã sinh viên (Ký tự, bắt đầu bằng SV): ");
-        while (true) {
-            this.studentId = sc.nextLine().trim();
-            if (this.studentId.matches("^[CET][A-Za-z0-9]{4}$")) {
-                break;
-            }
-            System.out.print("Mã sinh viên không hợp lệ. Nhập lại: ");
-        }
+        this.studentId = sc.nextLine().trim();
+
         System.out.print("Nhập tên sinh viên: ");
         this.studentName = sc.nextLine();
 
