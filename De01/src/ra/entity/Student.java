@@ -1,7 +1,6 @@
 package ra.entity;
 
 import java.util.Scanner;
-import
 
 public class Student implements IApp {
     private String studentId;
@@ -128,7 +127,7 @@ public class Student implements IApp {
 
     @Override
     public void displayData() {
-        
+
         System.out.println("Mã sinh viên: " + studentId);
         System.out.println("Tên sinh viên: " + studentName);
         System.out.println("Ngày Sinh: " + birthday);
